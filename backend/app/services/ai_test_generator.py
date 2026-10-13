@@ -149,7 +149,7 @@ Return ONLY a valid JSON array of {count} scenario objects. No markdown, no expl
     client = genai.Client(api_key=key)
 
     candidate_models = [model]
-    for fallback in ["gemini-2.0-flash", "gemini-1.5-flash"]:
+    for fallback in ["gemini-3.8-flash"]:
         if fallback not in candidate_models:
             candidate_models.append(fallback)
 
